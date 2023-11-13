@@ -1,0 +1,148 @@
+/* IMPORT */
+/* 1 - Import, from Google Fonts, a font-family called "Montserrat" (regular 400) */
+/* Use <link> tag to do it */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+
+font-family: 'Montserrat', sans-serif;
+}
+/* NEW CSS STYLE SELECTOR */
+/* 2 - Apply "Montserrat" font-family to the whole document, using UNIVERSAL SELECTOR */
+*{
+   
+    /* Your CSS code goes here */
+}
+
+/* NEW CSS STYLE SELECTOR */
+/* 3 - Apply linear gradient background color to the whole VISIBLE PART of our document */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(150deg,#3c95c6 #3dcbcc);
+
+
+/* NEW CSS STYLE SELECTOR */
+/* 4 - The ROOT ELEMENT must avoid the background repetition... ¿how?  */
+   height: 100vh; 
+}
+/* NEW CSS STYLE SELECTOR */
+/* 5
+    a - Center the MAIN LOGIN DIV to the center of the screen
+    b - Put a dark color as a background
+    c - Put a violet shadow around your MAIN LOGIN DIV
+    d - Put a rounded border
+    e - Put a width of 400 pixels
+    f - Put a padding of 40 pixels
+    */
+
+.login-box {
+    position:absolute;
+    top:50%;
+    left:50%;    
+    transform: translate(-50%,-50%);
+    width: : 400px;
+    background: ;
+    /* The rest of your CSS code ...*/
+}
+
+.login-box h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid;
+}
+
+/* NEW CSS STYLE SELECTOR */
+/* 6 - Using only DESCENDANT SELECTOR, try to center, align and put margins to your LOGIN header title.
+        Don't forget about put a white color into your font */
+
+
+/* NEW CSS STYLE SELECTOR */
+/* 7 - Using only DESCENDANT SELECTOR, apply the following CSS styles to the both INPUTS (Username and password)
+    a - The width must be the maximum with a separation between both inputs
+    b - Put a white color and a correct font size in order to see their text
+    c - The background must be transparent
+    d - The border must have only the a solid white bottom line
+    e - The outline must be established to NONE
+    f - Put a margin bottom of 30 pixels
+         */
+.login-box .user-box input {
+    outline:none;
+    /* The rest of your CSS code ...*/
+}
+
+
+/* NEW CSS STYLE SELECTOR */
+/* 8 - Using only DESCENDANT SELECTOR, apply the following CSS styles to the both LABELS for inputs (Username and password)
+    a - We need a relative position to their parent with a properly left and top (try to fix correctly)
+    b - Put a white color and a correct font size in order to see their text
+    c - Put a transition of 0.5 seconds 
+    d - Delete pointer events
+         */
+.login-box .user-box label {
+    position:relative;
+    left:0;
+    top:-60px;
+    pointer-events: none;
+    transition: 0.5s;
+    /* The rest of your CSS code ...*/
+}
+
+/* NEW CSS STYLE SELECTOR */
+/* 9 - Using only DESCENDANT SELECTOR, apply the following actions to your LABELS 
+    a - Replace your MAIN LOGIN DIV CLASS and INPUTS DIV CLASS by the following CSS code:
+
+        MAIN_LOGIN_DIV_CLASS INPUT_DIV_CLASS input:focus~label,
+        MAIN_LOGIN_DIV_CLASS INPUT_DIV_CLASS input:valid~label {
+           ...
+        }
+
+    b - Inside above CSS style, change the relative position by TOP -85 pixels and LEFT 0 pixels
+    c - Inside above CSS style, reduce font size of both labels
+    d - Inside above CSS style, apply a violet color to your font labels
+*/
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top:-85px;
+    left:0;
+    /* The rest of your CSS code ...*/
+}
+
+
+/* NEW CSS STYLE SELECTOR */
+/* 10 - Using ID SELECTOR, try to apply your own styles in order to get the image button result of SUBMIT */
+
+
+/* NEW CSS STYLE PSEUDOCLASS */
+/* 11 - When we pass the mouse ABOVE the submit button, we must change its color to violet and the border must be rounded...
+        Pay attention that it appears a violet shadow...*/
+
+
+/* NEW CSS STYLE SELECTOR */
+/* To your SUBMIT AND REGISTER DIV, use FLEXBOX in order to represent both elements 
+        TIP: Use ROW as flex direction*/
+.button-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* EVERYTHING IS DONE... YOU MUSTN'T TOUCH THIS CODE*/
+}
+
+/* NEW CSS STYLE SELECTOR */
+/* 12 - Using ID Selector, modify your REGISTER DIV styles putting
+    a - Font size of 14 pixels
+    b - Delete UNDERLINE style
+    c - Put a white color
+    d - Put a with of 60 percent
+    e - The text must be aligned into the center of the div
+    f - Put an AUTO MARGIN 
+*/
+
+
+/* NEW CSS STYLE SELECTOR */
+/* 13 - Using only DESCENDANT SELECTOR, apply the following CSS styles to the HYPERLINK inside REGISTER DIV
+    a - Put an AUTO MARGIN
+    b - Delete UNDERLINED style
+    c - Put a violet color 
+*/ 
